@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:imagecirle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="multipurpose.CoursesPage"
+             Padding="0,20,0,0"
+             BackgroundColor="LavenderBlush"
+             Title="Courses Available">
+    <Grid Padding="6" ColumnSpacing="2" RowSpacing="2">
+        
+        <!--#region Arabic and Islamic Studies-->
+        <StackLayout 
+            Grid.Row="0" Grid.Column="0" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="irkParentGrid" Tapped="irkParentGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="irkImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Arabic and Islamic Studies" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+        
+        <!--#region Programming-->
+        <StackLayout 
+            Grid.Row="1" Grid.Column="0" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="progParentGrid" Tapped="progParentGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="progImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Programming" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+        
+        <!--#region Science and Engineering-->
+        <StackLayout 
+            Grid.Row="2" Grid.Column="0" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="stemGrid" Tapped="stemGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="stemImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Sciences and Engineering" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+        
+    </Grid>
+    
+    
+</ContentPage>

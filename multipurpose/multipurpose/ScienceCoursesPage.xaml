@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:imagecirle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="multipurpose.ScienceCoursesPage"             
+             Padding="0,20,0,0"
+             BackgroundColor="LavenderBlush"
+             Title="Science Courses">
+
+    <Grid ColumnSpacing="2" RowSpacing="2">
+
+        <!--#region  Electrical and Electronic-->
+        <StackLayout 
+            VerticalOptions="Center"
+            Grid.Row="0" Grid.Column="0" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="eeGrid" Tapped="eeGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="eeImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label 
+                FontAttributes="Bold" Text="Basics of Electrical and Electronic" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <!--#endregion-->
+
+        <!--#region Biology-->
+        <StackLayout 
+            VerticalOptions="Center"
+            Grid.Row="0" Grid.Column="1" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="bioGrid" Tapped="bioGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="bioImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Biology" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+
+        <!--#region Chemistry -->
+        <StackLayout 
+            VerticalOptions="Center"
+            Grid.Row="1" Grid.Column="0" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="chemGrid" Tapped="chemGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="chemImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Chemistry" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+        
+        <!--#region Physics-->
+        <StackLayout 
+            VerticalOptions="Center"
+            Grid.Row="1" Grid.Column="1" Padding="20">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer x:Name="phyGrid" Tapped="phyGrid_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+            <imagecirle:CircleImage x:Name="phyImage" Aspect="AspectFill"
+                                    HeightRequest="120" WidthRequest="120"/>
+
+            <Label Text="Physics" HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+        <!--#endregion-->
+        
+    </Grid>
+
+</ContentPage>
