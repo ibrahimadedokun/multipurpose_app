@@ -21,9 +21,10 @@ namespace multipurpose
             chemImage.Source = ImageSource.FromResource("multipurpose.Images.chemistry_logo.jpg");
         }
 
-        private void eeGrid_Tapped(object sender, EventArgs e)
+        async private void eeGrid_Tapped(object sender, EventArgs e)
         {
-            DisplayAlert("Task", "You clicked me ", "All right");
+            //DisplayAlert("Task", "You clicked me ", "All right");
+            await Navigation.PushAsync(new EEIntroPage());
         }
 
         private void bioGrid_Tapped(object sender, EventArgs e)
