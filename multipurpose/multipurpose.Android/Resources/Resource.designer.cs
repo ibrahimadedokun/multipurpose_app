@@ -9323,7 +9323,10 @@ namespace multipurpose.Droid
 			public const int launcher_foreground = 2131492866;
 			
 			// aapt resource value: 0x7F0C0003
-			public const int stemPPP = 2131492867;
+			public const int sc = 2131492867;
+			
+			// aapt resource value: 0x7F0C0004
+			public const int scirc = 2131492868;
 			
 			static Mipmap()
 			{

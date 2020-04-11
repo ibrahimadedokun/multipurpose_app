@@ -10,7 +10,7 @@ using ImageCircle.Forms.Plugin.Droid;
 
 namespace multipurpose.Droid
 {
-    [Activity(Label = "multipurpose", Icon = "@mipmap/stemPPP", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "multipurpose", Icon = "@mipmap/sc", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
